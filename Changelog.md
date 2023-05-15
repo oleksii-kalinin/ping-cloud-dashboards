@@ -1,5 +1,13 @@
 # Changelog
 
+### 1.19.0.0
+
+- OpenSearch migration: update grafana dashboards datasource
+
+_Changes_
+
+- [X] PDO-5245 Update grafana dashboards datasource
+
 ### 1.18.0.0
 
 - Refactor 'Grafana PingFederate Topology Dashboard' queries to exclude healcheckconnection information from them
