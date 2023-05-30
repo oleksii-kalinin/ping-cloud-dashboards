@@ -24,14 +24,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 7,
+  "id": 11,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "datasource": {
         "type": "grafana-opensearch-datasource",
-        "uid": "fPADfUs4k"
+        "uid": "muQHLUs4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -376,7 +376,7 @@
       {
         "allValue": "*",
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
