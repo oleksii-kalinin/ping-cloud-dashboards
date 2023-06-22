@@ -6,7 +6,6 @@ metadata:
 spec:
   resyncPeriod: 30s
   folder: "Monitoring"
-  uid: logging
   instanceSelector:
     matchLabels:
       dashboards: "grafana"
