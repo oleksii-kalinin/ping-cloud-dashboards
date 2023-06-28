@@ -4,7 +4,6 @@ kind: GrafanaDashboard
 metadata:
   name: kubernetesapiserverperfomance
 spec:
-  resyncPeriod: 30s
   folder: "Kubernetes"
   instanceSelector:
     matchLabels:

@@ -4,7 +4,6 @@ kind: GrafanaDashboard
 metadata:
   name: pabyserver
 spec:
-  resyncPeriod: 30s
   folder: "Ping"
   instanceSelector:
     matchLabels:

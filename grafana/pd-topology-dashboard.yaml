@@ -4,7 +4,6 @@ kind: GrafanaDashboard
 metadata:
   name: pdtopology
 spec:
-  resyncPeriod: 30s
   folder: "Ping"
   instanceSelector:
     matchLabels:

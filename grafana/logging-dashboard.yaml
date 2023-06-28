@@ -4,7 +4,6 @@ kind: GrafanaDashboard
 metadata:
   name: logging
 spec:
-  resyncPeriod: 30s
   folder: "Monitoring"
   instanceSelector:
     matchLabels:
