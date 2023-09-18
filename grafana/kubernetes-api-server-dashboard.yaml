@@ -601,7 +601,7 @@ spec:
               "expr": "apiserver_storage_db_total_size_in_bytes{k8s_cluster_name=~\"$cluster_name\"}",
               "format": "time_series",
               "hide": false,
-              "legendFormat": "__auto",
+              "legendFormat": "Endpoint {{endpoint}}",
               "range": true,
               "refId": "B"
             }
