@@ -118,7 +118,7 @@ spec:
             },
             "editorMode": "code",
             "expr": "karpenter_nodes_termination_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0\"}",
-            "legendFormat": "Min",
+            "legendFormat": "Min-{{instance}}",
             "range": true,
             "refId": "A"
           },
@@ -130,7 +130,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_nodes_termination_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.5\"}",
             "hide": false,
-            "legendFormat": "P50",
+            "legendFormat": "P50-{{instance}}",
             "range": true,
             "refId": "B"
           },
@@ -142,7 +142,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_nodes_termination_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.9\"}",
             "hide": false,
-            "legendFormat": "P90",
+            "legendFormat": "P90-{{instance}}",
             "range": true,
             "refId": "C"
           },
@@ -154,7 +154,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_nodes_termination_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.99\"}",
             "hide": false,
-            "legendFormat": "P99",
+            "legendFormat": "P99-{{instance}}",
             "range": true,
             "refId": "D"
           },
@@ -166,7 +166,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_nodes_termination_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"1\"}",
             "hide": false,
-            "legendFormat": "Max",
+            "legendFormat": "Max-{{instance}}",
             "range": true,
             "refId": "E"
           }
@@ -258,7 +258,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0\"}",
             "format": "time_series",
-            "legendFormat": "Min",
+            "legendFormat": "Min-{{instance}}",
             "range": true,
             "refId": "Minimum"
           },
@@ -270,7 +270,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.5\"}",
             "hide": false,
-            "legendFormat": "P50",
+            "legendFormat": "P50-{{instance}}",
             "range": true,
             "refId": "Median"
           },
@@ -282,7 +282,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.9\"}",
             "hide": false,
-            "legendFormat": "P90",
+            "legendFormat": "P90-{{instance}}",
             "range": true,
             "refId": "P90"
           },
@@ -294,7 +294,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.99\"}",
             "hide": false,
-            "legendFormat": "P99",
+            "legendFormat": "P99-{{instance}}",
             "range": true,
             "refId": "P99"
           },
@@ -306,7 +306,7 @@ spec:
             "editorMode": "code",
             "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"1\"}",
             "hide": false,
-            "legendFormat": "Max",
+            "legendFormat": "Max-{{instance}}",
             "range": true,
             "refId": "Maximum"
           }
@@ -397,7 +397,7 @@ spec:
             "editorMode": "code",
             "expr": "histogram_quantile(0, rate(controller_runtime_reconcile_time_seconds_bucket{k8s_cluster_name=~\"$cluster_name\",controller=\"$controller\"}[10m]))",
             "hide": false,
-            "legendFormat": "Min",
+            "legendFormat": "Min-{{instance}}",
             "range": true,
             "refId": "Minimum"
           },
@@ -408,7 +408,7 @@ spec:
             },
             "editorMode": "code",
             "expr": "histogram_quantile(0.5, rate(controller_runtime_reconcile_time_seconds_bucket{k8s_cluster_name=~\"$cluster_name\",controller=\"$controller\"}[10m]))",
-            "legendFormat": "P50",
+            "legendFormat": "P50-{{instance}}",
             "range": true,
             "refId": "Median"
           },
@@ -420,7 +420,7 @@ spec:
             "editorMode": "code",
             "expr": "histogram_quantile(0.9, rate(controller_runtime_reconcile_time_seconds_bucket{k8s_cluster_name=~\"$cluster_name\",controller=\"$controller\"}[10m]))",
             "hide": false,
-            "legendFormat": "P90",
+            "legendFormat": "P90-{{instance}}",
             "range": true,
             "refId": "P90"
           },
@@ -432,7 +432,7 @@ spec:
             "editorMode": "code",
             "expr": "histogram_quantile(0.99, rate(controller_runtime_reconcile_time_seconds_bucket{k8s_cluster_name=~\"$cluster_name\",controller=\"$controller\"}[10m]))",
             "hide": false,
-            "legendFormat": "P99",
+            "legendFormat": "P99-{{instance}}",
             "range": true,
             "refId": "P99"
           },
@@ -444,7 +444,7 @@ spec:
             "editorMode": "code",
             "expr": "histogram_quantile(1, rate(controller_runtime_reconcile_time_seconds_bucket{k8s_cluster_name=~\"$cluster_name\",controller=\"$controller\"}[10m]))",
             "hide": false,
-            "legendFormat": "Max",
+            "legendFormat": "Max-{{instance}}",
             "range": true,
             "refId": "Maximum"
           }
