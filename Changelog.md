@@ -14,6 +14,7 @@
 - Logstash main pipeline refactoring
 - Add Karpenter capacity and performance Grafana dashboard
 - Add new metric for Kubernetes API Server Performance dashboard
+- Fix P1AS Ingress Dashboard
 
 _Changes_
 
@@ -30,6 +31,7 @@ _Changes_
 - [X] PDO-5873 Update OpenSearch/OSD to v2.8
 - [X] PDO-5923 Karpenter capacity and performance Grafana dashboard
 - [X] PDO-6091 Add new metric for Kubernetes API Server Performance dashboard
+- [X] PDO-6231 Fix P1AS Ingress Dashboard
 
 ### 1.18.0.0
 - Refactor 'Grafana PingFederate Topology Dashboard' queries to exclude healcheckconnection information from them
