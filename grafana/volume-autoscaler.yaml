@@ -343,7 +343,7 @@ spec:
       },
       "timepicker": {},
       "timezone": "",
-      "title": "Volume auto-scaler",
+      "title": "Volume Autoscaler",
       "uid": "b52bcc76-7916-47b0-9296-0d739882bf5b",
       "version": 9,
       "weekStart": ""
