@@ -2006,7 +2006,7 @@ spec:
               "hide": false,
               "interval": "10s",
               "intervalFactor": 1,
-              "legendFormat": "-> pod: {{ pod }} | {{ container }}",
+              "legendFormat": "-> pod: {{ pod }}",
               "metric": "network",
               "range": true,
               "refId": "B",
@@ -2022,7 +2022,7 @@ spec:
               "hide": false,
               "interval": "10s",
               "intervalFactor": 1,
-              "legendFormat": "<- pod: {{ pod }} | {{ container }}",
+              "legendFormat": "<- pod: {{ pod }}",
               "metric": "network",
               "refId": "D",
               "step": 10
