@@ -732,7 +732,7 @@ spec:
             "name": "ingressName",
             "options": [],
             "query": {
-              "query": "label_values(kube_ingress_labels,ingress)",
+              "query": "label_values(kube_ingress_info,ingress)",
               "refId": "prometheus-ingressName-Variable-Query"
             },
             "refresh": 1,
